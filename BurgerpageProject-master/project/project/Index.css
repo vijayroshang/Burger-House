@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Collegiate+One:ital@1&family=Antonio&family=Roboto&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Collegiate+One&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Collegiate+One&family=Antonio:wght@300&family=Roboto:wght@500&display=swap');
+
+
+:root {
+    --textcolor: rgb(67, 23, 23);
+    --fontfamily: 'Antonio', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: rgb(67, 23, 23); */
+
+}
+
+#nav_bar {
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(234, 171, 54); */
+    background-image: url("./assets/image/background.jpg");
+}
+
+#nav_bar>.nav_Block {
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+#nav_bar>.nav_Block>.logoBlock {
+    height: inherit;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoBlock>a>i {
+    font-size: 40px;
+    color: rgb(67, 23, 23);
+}
+
+.logoBlock>h2>a {
+    font-family: 'Antonio', sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgb(67, 23, 23);
+}
+
+#nav_bar>.nav_Block>.menuBlock {
+    width: 35%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.menuBlock>span {
+    position: absolute;
+    top: 30%;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menuBlock>span>a {
+    text-decoration: none;
+    color: rgb(67, 23, 23);
+    font-size: 18px;
+}
+
+#nav_bar>.nav_Block>.menuBlock>ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15%;
+}
+
+#nav_bar>.nav_Block>.menuBlock>ul>li>a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(67, 23, 23);
+    text-transform: uppercase;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#nav_bar>.nav_Block>.menuBlock>ul>li>a:hover {
+    border-bottom: 4px solid rgb(67, 23, 23);
+    padding-bottom: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.contentBlock {
+    height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.contentBlock>.block1 {
+    width: 50%;
+    height: inherit;
+}
+
+.contentBlock>.block1>.infoBlock {
+    position: absolute;
+    left: 0;
+    top: 18%;
+    text-transform: uppercase;
+    border: 2px dashed;
+    color: rgb(67, 23, 23);
+    padding: 5px 7px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Antonio', sans-serif;
+
+}
+
+.contentBlock>.block1>.headBlock {
+    text-transform: uppercase;
+    color: rgb(67, 23, 23);
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 3px 3px rgb(247, 236, 170);
+    font-size: 5em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 25%;
+}
+
+.contentBlock>.block1>.head2 {
+    text-transform: uppercase;
+    color: rgb(67, 23, 23);
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 3px 3px rgb(251, 240, 178);
+    font-size: 2em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 47%;
+}
+
+.contentBlock>.img1 {
+    position: relative;
+    height: inherit;
+    width: 50%;
+    overflow: hidden;
+}
+
+.contentBlock>.img1>.img2 {
+    height: 320px;
+    width: 330px;
+    position: absolute;
+    top: 27%;
+    z-index: 5;
+    left: 24%;
+}
+
+.contentBlock>.img1>.img3 {
+    height: 400px;
+    width: 140px;
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    z-index: 2;
+}
+
+.contentBlock>.img1>.img4 {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 25%;
+    left: 0%;
+    z-index: 2;
+
+}
+
+.contentBlock>.img1>.img5 {
+    height: 470px;
+    width: 500px;
+    position: absolute;
+    top: -20%;
+    left: 11%;
+}
+
+.contentBlock>.img1>.img6 {
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+}
+
+.contentBlock>.img1>.img7 {
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    bottom: 0.5%;
+    right: 13%;
+}
+
+.priceBlock {
+    height: 115px;
+    width: 115px;
+    background-color: red;
+    border-radius: 50%;
+    color: white !important;
+    position: absolute;
+    right: 33%;
+    bottom: 7%;
+    z-index: 7;
+    outline: 8px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Antonio', sans-serif;
+    border: 2px dashed white !important;
+
+}
+
+.priceBlock>p {
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Antonio', sans-serif;
+
+}
+
+/* main block ends */
+
+#gallBlock {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+}
+
+#gallBlock>article {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallBlock1 {
+    width: 48.5%;
+    height: inherit;
+    position: relative;
+    border-radius: 15px;
+    background-image: url("./assets/image/1662542721970.png");
+}
+
+.gallBlock1:hover {
+    transform: scale(1.07);
+}
+
+.gallContent>h2 {
+    position: absolute;
+    z-index: 5;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallContent>h1 {
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    font-size: 34px;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallBlock2 {
+    width: 48.5%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallBlock2>.imageBlock1 {
+    height: 47%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(162, 239, 95);
+    background-image: url("./assets/image/1662542722006.jpeg");
+    position: relative;
+}
+
+.gallBlock2>.imageBlock1:hover {
+    transform: rotateX(360deg);
+    transition-duration: 3s;
+}
+
+.gallContent2>h2 {
+    position: absolute;
+    z-index: 5;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallContent2>h1 {
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 24%;
+    font-size: 32px;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallBlock2>.imageBlock2 {
+    height: 47%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(162, 239, 95);
+    background-image: url("./assets/image/1662542721921.jpeg");
+    position: relative;
+}
+
+/* gallery ends */
+
+#orderBlock {
+    width: 100%;
+    height: 100vh;
+}
+
+#orderBlock>article {
+    width: 93%;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#orderBlock>article>h2 {
+    padding: 4px;
+    background-color: rgb(234, 171, 54);
+    width: 220px;
+    height: 7%;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    /* animation: anim1 5s ease-in-out infinite alternate-reverse; */
+}
+
+/* @keyframes anim1 {
+    0% {}
+
+    50% {
+        background-color: tomato;
+        color: rgb(35, 28, 28);
+        border-radius: 10px;
+        transform: scale(1.05);
+    }
+
+    100% {
+        background-color: aquamarine;
+        color: brown;
+    }
+} */
+
+#orderBlock>article>h1 {
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(67, 23, 23);
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 9%;
+    left: 31%;
+}
+
+#orderBlock>article>p {
+    color: rgb(67, 23, 23);
+    position: absolute;
+    top: 18%;
+    width: 80%;
+    font-weight: 600;
+}
+
+#orderBlock>article>.cardBlock {
+    width: 100%;
+    height: 68vh;
+    position: absolute;
+    top: 28%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#orderBlock>article>.cardBlock>.card {
+    width: 29%;
+    height: 68vh;
+    background-color: rgba(245, 245, 237, 0.902);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 10px;
+}
+
+#orderBlock>article>.cardBlock>.card>.img1 {
+    height: 200px;
+    position: absolute;
+    top: 2%;
+}
+#orderBlock>article>.cardBlock>.card>.shadow {
+    height: 50px;
+    width: 350px;
+    position: absolute;
+    top: 49%;
+}
+
+#orderBlock>article>.cardBlock>.card>h1 {
+    position: absolute;
+    top: 63%;
+    font-size: 1.5em;
+    font-family: 'Antonio', sans-serif;
+    color: rgb(67, 23, 23);
+
+
+}
+
+#orderBlock>article>.cardBlock>.card>p {
+    font-weight: 600;
+    position: absolute;
+    bottom: 17%;
+    font-family: 'Antonio', sans-serif;
+    color: rgb(67, 23, 23);
+
+}
+
+#orderBlock>article>.cardBlock>.card>button {
+    position: absolute;
+    bottom: 3%;
+    padding: 9px 25px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    /* animation: anim2 3s ease-in-out infinite alternate-reverse; */
+}
+
+/* @keyframes anim2 {
+    0% {}
+
+    100% {
+        /* background-color: tomato; */
+        color: rgb(35, 28, 28);
+        border-radius: 10px;
+        transform: scale(1.04);
+    }
+} */
+h2{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+/* discover block */
+a {
+    text-decoration: none;
+}
+
+#discoverBlock {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+#discoverBlock>.discoverChildBlock {
+    width: 90%;
+    height: 65vh;
+    box-shadow: 9px 12px 25px grey;
+    display: flex;
+}
+
+#discoverBlock>.discoverChildBlock>.contentBlock {
+    width: 45%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    padding: 40px;
+    font-family: var(--fontfamily);
+    color: var(--textcolor);
+}
+
+#discoverBlock>.discoverChildBlock>.contentBlock>.head {
+    font-family: 'alfa slab one', sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+
+}
+
+#discoverBlock>.discoverChildBlock>.contentBlock>h3 {
+    font-size: 25px;
+}
+
+#discoverBlock>.discoverChildBlock>.contentBlock>p {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#discoverBlock>.discoverChildBlock>.imageBlock {
+    width: 55%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#discoverBlock>.discoverChildBlock>.imageBlock>img {
+    height: 90%;
+    width: 90%;
+}
+
+/* reservation block */
+#bookingBlock {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+#bookingBlock>h3 {
+    font-family: var(--fontfamily);
+    font-size: 25px;
+    color: var(--textcolor);
+    letter-spacing: 2px;
+}
+
+#bookingBlock>h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: var(--textcolor);
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+#bookingBlock input[type="text"] {
+    width: 320px;
+    height: 50px;
+    padding: 11px;
+    border-radius: 4px;
+    border: 2px solid gray;
+    color: black;
+}
+
+#bookingBlock input[type="button"] {
+    background-color: rgb(222, 58, 58);
+    width: 320px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(243, 238, 238);
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+#bookingBlock>.abt3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 260px;
+    width: 170px;
+}
+
+#bookingBlock>.abt2 {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    height: 220px;
+    width: 190px;
+}
+
+#bookingBlock>.abt1 {
+    position: absolute;
+    left: 11%;
+    top: 40%;
+    height: 330px;
+    width: 200px;
+}
+
+/* footer start */
+#footerBlock {
+    width: 100%;
+    height: 65vh;
+}
+
+#footerBlock>.footerContent {
+    width: 94%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    /* display: flex; */
+}
+
+#footerBlock>.footerContent>img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(35%);
+    z-index: 1;
+}
+
+#footerBlock>.footerContent>.section {
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+
+}
+
+#footerBlock>.footerContent>.section>.contentBlock {
+    width: 50%;
+    height: inherit;
+    color: white;
+    position: relative;
+}
+
+#footerBlock>.footerContent>.section>.contentBlock>a>i {
+    color: white;
+    font-size: 4em;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+#footerBlock>.footerContent>.section>.contentBlock>a>h1 {
+    font-size: 34px;
+    font-family: var(--fontfamily);
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    color: white;
+}
+
+#footerBlock>.footerContent>.section>.contentBlock>.infoBlock {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    line-height: 25px;
+}
+
+#footerBlock>.footerContent>.section>.contentBlock>.copyBlock {
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    text-transform: uppercase;
+    font-family: var(--fontfamily);
+
+}
+
+#footerBlock>.footerContent>.section>.contactBlock {
+    width: 50%;
+    height: inherit;
+    color: white;
+    position: relative;
+}
+
+#footerBlock>.footerContent>.section>.contactBlock>a>.locationText {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-family: var(--fontfamily);
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+#footerBlock>.footerContent>.section>.contactBlock>a>.mailText {
+    position: absolute;
+    top: 46%;
+    left: 25%;
+    font-family: var(--fontfamily);
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+#footerBlock>.footerContent>.section>.contactBlock>h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    color: white;
+}
+
+#footerBlock>.footerContent>.section>.contactBlock>h3>a {
+    color: white;
+}

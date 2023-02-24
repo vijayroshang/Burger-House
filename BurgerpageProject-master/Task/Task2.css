@@ -1,0 +1,208 @@
+body{
+    background: radial-gradient(circle,purple,skyblue);
+ }
+ img{
+     height: 250px;
+     width: 250px;
+     border: 1px solid black; 
+ 
+ }
+ 
+ section>div>#img1{
+    position: absolute;
+    animation-name: new1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    transition: ease-in-out;
+    
+ }
+ @keyframes new1 {
+    0%{left: 0px;
+       top: 0px;
+       z-index: 1;
+   }
+   
+   50%{left: 300px;
+       top: 400px;
+       z-index: 1;
+   }
+   75%{
+    top: 0px;
+    left: 800px;
+    z-index: 1;
+   }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index: 1;
+   }
+ }
+ section>div>#img2{
+    position: absolute;
+    animation-name: new2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+    transition: ease-in-out;
+ }
+ @keyframes new2 {
+    0%{left: 0px;
+       top: 0px;
+       z-index: 2;
+   }
+   
+   50%{left: 300px;
+       top: 390px;
+       z-index: 2;
+   }
+   75%{top: 0px;
+    left: 780px;
+    z-index: 2;
+ }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index: 2;
+   }
+ }
+ section>div>#img3{
+    position: absolute;
+    animation-name: new3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    transition: ease-in-out;
+ }
+ @keyframes new3 {
+    0%{left: 0px;
+       top: 0px;
+       z-index: 3;
+   }
+   
+   50%{left: 300px;
+       top: 380px;
+       z-index: 3;
+   }
+   75%{top: 0px;
+    left: 760px;
+    z-index: 3;
+ }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index: 3;
+   }
+ }
+ section>div>#img4{
+    position: absolute;
+    animation-name: new2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+    transition: ease-in-out;
+ }
+ @keyframes new4 {
+    0%{left: 0px;
+       top: 0px;
+       z-index: 10;
+   }
+   
+   50%{left: 300px;
+       top: 370px;
+       z-index: 10;
+   }
+   75%{top: 0px;
+    left: 740px;
+    z-index: 10;
+ }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index:10;
+   }
+ }
+ section>div>#img5{
+    position: absolute;
+    animation-name: new2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    transition: ease-in-out;
+ }
+ @keyframes new5 {
+    0%{left: 0px;
+       top: 0px;
+       z-index: 5;
+   }
+   
+   50%{left: 300px;
+       top: 360px;
+       z-index: 5;
+   }
+   75%{top: 0px;
+    left: 720px;
+    z-index: 5;
+ }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index: 5;
+   }
+ }
+ section>div>#img6{
+    position: absolute;
+    animation-name: new2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+    transition: ease-in-out;
+ }
+ @keyframes new6{
+    0%{left: 0px;
+       top: 0px;
+       z-index: 6;
+   }
+   
+   50%{left: 300px;
+       top: 350px;
+       z-index: 6;
+   }
+   75%{top: 0px;
+    left: 700px;
+    z-index: 6;
+ }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index: 6;
+   }
+ }
+ section>div>#img7{
+    position: absolute;
+    animation-name: new7;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    transition: ease-in-out;
+ }
+ @keyframes new7{
+    0%{left: 0px;
+       top: 0px;
+       z-index: 7;
+   }
+   
+   50%{left: 300px;
+       top: 340px;
+       z-index: 7;
+   }
+   75%{top: 0px;
+    left: 680px;
+    z-index: 7;
+ }
+   100%{
+       left: 0px;
+       top: 0px;
+       z-index: 7;
+   }
+ }
